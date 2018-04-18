@@ -2,4 +2,8 @@ rootProject.name = 'Tools'
 include '300swagger'
 include '300swagger:sg1original'
 findProject(':300swagger:sg1original')?.name = 'sg1original'
+include '300swagger:sg3filter'
+findProject(':300swagger:sg3filter')?.name = 'sg3filter'
+include '300swagger:sg7toword'
+findProject(':300swagger:sg7toword')?.name = 'sg7toword'
 
