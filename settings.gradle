@@ -1,0 +1,5 @@
+rootProject.name = 'Tools'
+include '300swagger'
+include '300swagger:sg1original'
+findProject(':300swagger:sg1original')?.name = 'sg1original'
+
