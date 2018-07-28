@@ -28,7 +28,7 @@ public class SwaggerConfig {
                 .apiInfo(new ApiInfoBuilder().title(" 用户模块 ").build())
                 .groupName("1.user")
                 .select()
-                .apis(matchPattern("/user*"))
+                .apis(matchPattern("/user.*"))
                 .build();
     }
 

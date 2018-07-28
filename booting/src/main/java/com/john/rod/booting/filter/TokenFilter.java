@@ -1,9 +1,9 @@
-package com.john.rod.booting.config;
+package com.john.rod.booting.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.john.rod.booting.common.BufferedServletRequestWrapper;
 import com.john.rod.booting.common.Context;
 import com.john.rod.booting.common.CurUser;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.*;
@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Map;
 
-@Configuration
+@Slf4j
+//@Configuration
 public class TokenFilter implements Filter {
 
     ObjectMapper objectMapper = new ObjectMapper();
@@ -47,11 +48,12 @@ public class TokenFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        log.debug(" token filter is initing ...");
     }
 
     @Override
     public void destroy() {
-
     }
+
+
 }

@@ -1,4 +1,6 @@
-package com.john.rod.booting.common;
+package com.john.rod.booting.filter;
+
+import com.john.rod.booting.MainApplication;
 
 import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
@@ -8,7 +10,6 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
 
 public class BufferedServletRequestWrapper extends HttpServletRequestWrapper {
 
